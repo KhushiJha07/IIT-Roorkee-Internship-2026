@@ -12,6 +12,8 @@ This week’s research focuses on the progression of Convolutional Neural Networ
 | **VGGNet-16** | Uses uniform $3 \times 3$ filters instead of mixed sizes, allowing for deeper networks while managing parameter counts. | ~138 million. |
 | **ResNet** | Introduces skip connections to bypass layers, allowing the network to learn the residual $f(x)$ for an output of $F(x) + x$. This solves the vanishing gradient problem where shallow layers stop learning. | ~126 million (152-layer). |
 | **DenseNet** | Features dense connections where every layer is connected via concatenation, maximizing feature reuse and keeping parameter counts low. | Low (growth rate $K$ produces only 32 filters). |
+
+
 While, applying this MNIST Datatset:
 <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/f1697e4e-06ef-4c9c-ad3b-15f1b828bd95" />
 
