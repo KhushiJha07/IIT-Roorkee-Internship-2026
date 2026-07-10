@@ -1,4 +1,4 @@
-# Week 2: Evolution of CNN Architectures & Vision Transformers
+# Week 2: IMP CNN Architectures & Vision Transformers
 
 ## Overview
 This week’s research focuses on the progression of Convolutional Neural Networks (CNNs), analyzing key architectures from LeNet to DenseNet to understand structural improvements. It also covers the inherent drawbacks of CNNs and how Vision Transformers (ViTs) utilize attention mechanisms for large-scale image recognition.
