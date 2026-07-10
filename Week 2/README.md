@@ -13,6 +13,8 @@ This week’s research focuses on the progression of Convolutional Neural Networ
 | **ResNet** | Introduces skip connections to bypass layers, allowing the network to learn the residual $f(x)$ for an output of $F(x) + x$. This solves the vanishing gradient problem where shallow layers stop learning. | ~126 million (152-layer). |
 | **DenseNet** | Features dense connections where every layer is connected via concatenation, maximizing feature reuse and keeping parameter counts low. | Low (growth rate $K$ produces only 32 filters). |
 
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/f1697e4e-06ef-4c9c-ad3b-15f1b828bd95" />
+
 ## Limitations of Traditional CNNs
 *   **Context and Flexibility:** CNNs struggle with capturing global context due to locality and translation invariance constraints.
 *   **Scaling Issues:** Stacking more layers to increase the receptive field often leads to vanishing gradients.
