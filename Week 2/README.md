@@ -12,7 +12,12 @@ This week’s research focuses on the progression of Convolutional Neural Networ
 | **VGGNet-16** | Uses uniform $3 \times 3$ filters instead of mixed sizes, allowing for deeper networks while managing parameter counts. | ~138 million. |
 | **ResNet** | Introduces skip connections to bypass layers, allowing the network to learn the residual $f(x)$ for an output of $F(x) + x$. This solves the vanishing gradient problem where shallow layers stop learning. | ~126 million (152-layer). |
 | **DenseNet** | Features dense connections where every layer is connected via concatenation, maximizing feature reuse and keeping parameter counts low. | Low (growth rate $K$ produces only 32 filters). |
-
+Architecture,Relative Training Time,Expected Test Accuracy,Expected Avg Loss,Why this happens
+LeNet-5,⚡ Very Fast,~96.5%,0.1200,It was literally built for this exact task. It learns digit shapes immediately.
+AlexNet,🐇 Fast,~97.2%,0.0950,"Its larger filters extract strong edges quickly, leading to a slight edge over LeNet."
+VGG-16,🐢 Extremely Slow,~94.5%,0.1800,"Because it is so deep and lacks Batch Normalization, it struggles to converge in just one epoch. It needs more time to ""warm up."""
+ResNet-18,🚶 Normal,~98.1%,0.0650,"The skip-connections and Batch Normalization allow the gradients to flow perfectly, resulting in massive accuracy on the first pass."
+DenseNet-121,🐌 Slow,~98.4%,0.0550,Every layer shares feature maps with every other layer. It extracts the absolute maximum amount of information from the digits instantly.
 ## Limitations of Traditional CNNs
 *   **Context and Flexibility:** CNNs struggle with capturing global context due to locality and translation invariance constraints.
 *   **Scaling Issues:** Stacking more layers to increase the receptive field often leads to vanishing gradients.
