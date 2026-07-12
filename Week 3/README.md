@@ -4,8 +4,6 @@
 
 To better understand the structural departure from traditional models, I compared the fundamental mechanics of Convolutional Neural Networks against Vision Transformers.
 
-![CNN vs ViT Architecture Comparison](./cnn_vs_vit_comparison.png)
-*(Note: Visual representation of hierarchical convolutions versus global self-attention patching).*
 
 ### Comparative Analysis Table
 
