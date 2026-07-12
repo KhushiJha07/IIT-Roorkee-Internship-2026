@@ -2,6 +2,8 @@
 
 This week involved a comprehensive analysis of the landmark paper: *"An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale."* My focus was on understanding the structural departure from Convolutional Neural Networks (CNNs) and the mathematical foundations of the self-attention mechanism in computer vision. 
 
+<img width="1418" height="808" alt="image" src="https://github.com/user-attachments/assets/9840e1e5-df8e-4adb-af95-e2d19efc8b35" />
+
 ## Key Technical Insights
 *   **Inductive Bias vs. Global Context:** Unlike CNNs, which have a strong inductive bias (locality/translation invariance), ViTs have minimal spatial priors, allowing them to learn global relationships from the very first layer given sufficient data.
 *   **The Patching Pipeline:** Images are reshaped from $H \times W \times C$ into a sequence of flattened 2D patches $x_p \in \mathbb{R}^{N \times (P^2 \cdot C)}$, where $N$ is the number of patches.
